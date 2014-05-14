@@ -1,0 +1,51 @@
+1. check the list of installed modules for perl.
+	$ instmodsh
+	Available commands are:
+   l            - List all installed modules
+   m <module>   - Select a module
+   q            - Quit the program
+cmd? l
+Installed modules are:
+   B::C
+   B::Flags
+   B::Stash
+   Bundle::libnet
+   ByteLoader
+   Digest::MD5
+   Expect
+   HTML::Parser
+   HTML::Tagset
+   IO::Tty
+   IPC::Run
+   LWP
+   MIME::Base64
+   Net::Server
+   Opcodes
+   Perl
+   Test::Simple
+   Time::HiRes
+   URI
+   YAML
+cmd? q
+
+2. How to configure CPAN for installing modules for Perl.
+	 Configure LWP.
+	 Modules required to configure LWP, which need to be manually installed.
+		libwww-perl-5.837.tar
+		MIME-Base64-3.14.tar
+		URI-1.60.tar
+		HTML-Tagset-3.20.tar
+		HTML-Parser-3.71.tar
+		Digest-MD5-2.53.tar
+		Bundle-libnet-1.00.tar
+	
+	Above modules need to be installed manually.
+	Once above steps done, change the urllist for CPAN to 
+	'urllist' => [q[http://www.cpan.org/], q[http://www.cpan.org], q[ftp://cpan.org/CPAN/]],
+			
+3. start the CPAN shell using perl -MCPAN -e shell.
+
+4. cpan> install Expect ( download any package to check if everything working fine )
+
+5. instmodsh to check if Expect is installed succesfully or not.
+	
