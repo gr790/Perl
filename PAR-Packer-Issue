@@ -1,0 +1,48 @@
+If you face below issue while installing PAR::Packer on CPAN or while building source code downloaded from cpan.org.
+
+cpan[4]> install PAR::Packer         
+Running install for module 'PAR::Packer'
+Checksum for /root/.cpan/sources/authors/id/R/RS/RSCHUPP/PAR-Packer-1.018.tar.gz ok
+Use of uninitialized value in scalar assignment at /usr/lib/perl5/5.8.8/CPAN/Distribution.pm line 1838.
+Use of uninitialized value in scalar assignment at /usr/lib/perl5/5.8.8/CPAN/Distribution.pm line 1839.
+Configuring R/RS/RSCHUPP/PAR-Packer-1.018.tar.gz with Makefile.PL
+Use of uninitialized value in scalar assignment at /usr/lib/perl5/5.8.8/CPAN/Distribution.pm line 1859.
+Use of uninitialized value in scalar assignment at /usr/lib/perl5/5.8.8/CPAN/Distribution.pm line 1860.
+*** You have extra Perl library paths set in your environment.
+    Please note that these paths (set with PERL5LIB or PERLLIB)
+    are not honored by perl when running under taint mode, which
+    may lead to problems. This is a limitation (by design) of
+    Perl, not of PAR::Packer; but some of the problems may
+    manifest here during installation.
+Checking if your kit is complete...
+Looks good
+Prototype mismatch: sub main::prompt: none vs ($;$) at /usr/lib/perl5/5.8.8/ExtUtils/MakeMaker.pm line 221
+"bsd_glob" is not defined in %File::Glob::EXPORT_TAGS at /usr/lib/perl5/5.8.8/ExtUtils/MakeMaker.pm line 221
+ERROR from evaluation of /root/.cpan/build/PAR-Packer-1.018-CWQJBv/myldr/Makefile.PL: Can't continue after import errors at ./Makefile.PL line 14
+BEGIN failed--compilation aborted at ./Makefile.PL line 14.
+Warning: No success on command[/usr/bin/perl Makefile.PL]
+  RSCHUPP/PAR-Packer-1.018.tar.gz
+  /usr/bin/perl Makefile.PL -- NOT OK
+Failed during this command:
+ RSCHUPP/PAR-Packer-1.018.tar.gz              : writemakefile NO '/usr/bin/perl Makefile.PL' returned status 65280
+cpan[5]> quit
+nds8mp7.vagrant$
+
+comment /root/.cpan/build/PAR-Packer-1.018-CWQJBv/myldr/Makefile.PL  line 14. 
+
+start the cpan shell again.
+cpan[1]> install PAR::Packer.
+
+It will successfully install.
+cpan[1]> install PAR::Packer
+Reading '/root/.cpan/Metadata'
+  Database was generated on Fri, 30 May 2014 07:17:02 GMT
+PAR::Packer is up to date (1.018).
+
+
+nds8mp7:~ # which pp
+/usr/local/bin/pp
+nds8mp7:~ #
+
+
+All the best for perl compliation.
