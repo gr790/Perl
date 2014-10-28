@@ -1,3 +1,13 @@
+Facing Pre-requisties Issue.
+Warning: prerequisite Archive::Zip 1.00 not found.
+Warning: prerequisite ExtUtils::Embed 0 not found.
+Warning: prerequisite Getopt::ArgvFile 1.07 not found.
+Warning: prerequisite Module::ScanDeps 1.15 not found.
+Warning: prerequisite PAR 1.005 not found.
+Warning: prerequisite PAR::Dist 0.22 not found.
+
+Install Above Packages one by one.
+
 If you face below issue while installing PAR::Packer on CPAN or while building source code downloaded from cpan.org.
 
 cpan[4]> install PAR::Packer         
