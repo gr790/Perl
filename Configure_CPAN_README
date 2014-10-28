@@ -2,9 +2,6 @@ How to check Perl verison:
 [root@perlbox ~]# perl -v | grep built
 This is perl, v5.10.1 (*) built for x86_64-linux-thread-multi
 [root@perlbox ~]#
-
-
-
 1. check the list of installed modules for perl.
 	$ instmodsh
 	Available commands are:
@@ -38,6 +35,7 @@ cmd? q
 2. How to configure CPAN for installing modules for Perl.
 	 Configure LWP.
 	 Modules required to configure LWP, which need to be manually installed.
+	        Compress-Raw-Zlib-2.066.tar
 		libwww-perl-5.837.tar
 		MIME-Base64-3.14.tar
 		URI-1.60.tar
