@@ -1,3 +1,10 @@
+How to check Perl verison:
+[root@perlbox ~]# perl -v | grep built
+This is perl, v5.10.1 (*) built for x86_64-linux-thread-multi
+[root@perlbox ~]#
+
+
+
 1. check the list of installed modules for perl.
 	$ instmodsh
 	Available commands are:
