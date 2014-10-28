@@ -43,6 +43,7 @@ cmd? q
 		HTML-Parser-3.71.tar
 		Digest-MD5-2.53.tar
 		Bundle-libnet-1.00.tar
+		Test-Simple-0.98.tar
 		
 		Installation of above package will be taken care like this.
 		
